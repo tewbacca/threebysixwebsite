@@ -18,14 +18,15 @@
   .doc ul { padding-left: 1.2rem; }
   .doc li { margin-bottom: .5rem; }
   .doc a { color: var(--accent); }
-  .mail-card {
+  .contact-card {
     margin-top: 2rem;
-    padding: 1.6rem;
+    padding: 1.8rem;
     border: 1px solid var(--line);
     border-radius: 16px;
     background: var(--bg-raised);
   }
-  .mail-card a { font-family: var(--display); font-weight: 700; font-size: 1.15rem; text-decoration: none; }
+  .contact-card p { margin-bottom: 1.1rem; }
+  .contact-note { margin-top: .9rem !important; color: var(--ink-faint) !important; font-size: .85rem !important; }
 </style>
 </head>
 <body>
@@ -46,8 +47,12 @@
   <h1>Support</h1>
   <p>Having trouble with 3 by 6, or have a question or feature request? Get in touch and we'll get back to you.</p>
 
-  <div class="mail-card">
-    <a href="mailto:support@3by6.app">support@3by6.app</a>
+  <div class="contact-card">
+    <p>Send a support request through the Pilea Studio support portal and we'll get back to you.</p>
+    <a class="btn-primary" href="https://pileaapps.atlassian.net/jira/software/form/67692465-59b0-4dbf-90b1-d7bc11108d3b" rel="noopener noreferrer">
+      Contact support <span aria-hidden="true">↗</span>
+    </a>
+    <p class="contact-note">You'll continue to the secure Pilea Studio support portal.</p>
   </div>
 
   <h2>Common questions</h2>

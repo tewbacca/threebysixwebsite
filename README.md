@@ -31,5 +31,5 @@ Then open `http://localhost:8000`.
 ## Before submitting to the App Store
 
 - Update the App Store badge link in `index.html` from `#` to the real App Store listing URL once the app is live.
-- Set up mail delivery for `support@3by6.app` (used in `support.html` and `privacy.html`), or swap in a real support address.
+- Support and privacy contact both route to the Pilea Studio Jira form (`support.html`) — it can't be embedded as an iframe (Atlassian sends `X-Frame-Options: SAMEORIGIN`), so it opens as a link instead.
 - Swap the placeholder board items in the "board demo" on the home page for a real screenshot once one exists.
