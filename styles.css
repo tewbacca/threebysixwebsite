@@ -139,23 +139,25 @@ p { margin: 0; }
 .store-badge-text .small { font-size: .66rem; color: var(--ink-dim); }
 .store-badge-text .big { font-size: 1.02rem; font-weight: 600; font-family: var(--display); }
 
-.store-badge.is-live {
-  background: var(--ink);
-  border-color: var(--ink);
-  color: var(--bg);
+/* Apple's official App Store badge — used unmodified per their marketing
+   guidelines, with clear space (~1/4 badge height) instead of a custom border/fill */
+.apple-badge {
+  display: inline-flex;
+  padding: 10px;
+  transition: transform .2s;
 }
-.store-badge.is-live .store-badge-text .small { color: rgba(10,10,13,0.6); }
-.store-badge.is-live svg { fill: var(--bg); }
-.store-badge.is-live:hover { transform: translateY(-2px); }
+.apple-badge:hover { transform: translateY(-2px); }
+.apple-badge img { height: 40px; width: auto; }
 
 .store-badge.is-future {
   position: relative;
+  height: 54px;
   background: transparent;
   color: var(--ink-faint);
   cursor: default;
   pointer-events: none;
 }
-.store-badge.is-future svg { fill: var(--ink-faint); }
+.store-badge.is-future svg { stroke: var(--ink-faint); }
 .store-badge.is-future .store-badge-text .big { color: var(--ink-faint); }
 .future-tag {
   position: absolute;
