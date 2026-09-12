@@ -1,5 +1,6 @@
 :root {
   --bg: #0a0a0d;
+  --bg-rgb: 10, 10, 13;
   --bg-raised: #131318;
   --ink: #f4f4f6;
   --ink-dim: #a6a6b0;
@@ -40,7 +41,7 @@ p { margin: 0; }
   align-items: center;
   justify-content: space-between;
   padding: 1.1rem 1.5rem;
-  background: rgba(10, 10, 13, 0.7);
+  background: rgba(var(--bg-rgb), 0.7);
   backdrop-filter: blur(14px);
   border-bottom: 1px solid transparent;
   transition: border-color .3s, background .3s;
@@ -213,6 +214,7 @@ p { margin: 0; }
   color: var(--accent);
   margin-bottom: 1.1rem;
 }
+.feature-card .icon .notch-cut { fill: var(--bg-raised); }
 .feature-card h3 { font-size: 1.05rem; font-weight: 700; margin-bottom: .5rem; }
 .feature-card p { color: var(--ink-dim); font-size: .95rem; }
 

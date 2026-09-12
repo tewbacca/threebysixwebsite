@@ -1,0 +1,20 @@
+/* Light theme override — load after styles.css. Swaps only the palette;
+   all layout/spacing rules in styles.css are unchanged. */
+:root {
+  --bg: #f7f6f3;
+  --bg-rgb: 247, 246, 243;
+  --bg-raised: #ffffff;
+  --ink: #16161b;
+  --ink-dim: #5c5c66;
+  --ink-faint: #93939c;
+  --line: rgba(10, 10, 20, 0.09);
+  --accent: #0e9a72;
+  --accent-ink: #ffffff;
+}
+
+.feature-grid { box-shadow: 0 1px 2px rgba(10,10,20,0.04); }
+.feature-card, .pricing-card {
+  box-shadow: 0 1px 3px rgba(10,10,20,0.04);
+}
+.hero-icon { box-shadow: 0 24px 60px rgba(10,10,20,0.14), 0 0 0 1px var(--line); }
+.btn-primary:hover { background: #0c8563; }
